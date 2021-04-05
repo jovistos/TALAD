@@ -40,8 +40,8 @@ class TALDownAudio:
         self.source_dir = Path('source')
         
     def _list_episodes(self, mode):
-        self.working_dir +"/misc/"+mode+".txt"
-        with open(self.working_dir +"/misc/"+mode+".txt") as f:
+        self.working_dir +"/train_test_valid_split/"+mode+".txt"
+        with open(self.working_dir +"/train_test_valid_split/"+mode+".txt") as f:
             episode_list = f.readlines()
         episode_list = [x.strip() for x in episode_list] 
         return episode_list
