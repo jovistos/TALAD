@@ -37,14 +37,12 @@ Examples
 --------
 
 .. code-block:: bash
+
     #download the test set
     python3 TAL_download_audio.py -p <apsolute_folder_path_to_download_the_data_in> -d test    
     
-    #download the test and valid, and convert files to wav
-    python3 TAL_download_audio.py -p <apsolute_folder_path_to_download_the_data_in> -d test valid -w True  
-    
-    #download train set
-    python3 TAL_download_audio.py -p <apsolute_folder_path_to_download_the_data_in> -d train  
+    #download the test, valid and train, and convert files to wav
+    python3 TAL_download_audio.py -p <apsolute_folder_path_to_download_the_data_in> -d test valid train -w True  
     
     #download the first part of train dataset and convert to wav (less than 20GB) (has 4 parts)
     python3 TAL_download_audio.py -p <apsolute_folder_path_to_download_the_data_in> -d train_part_1 -w True    
