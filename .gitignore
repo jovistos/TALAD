@@ -1,1 +1,28 @@
-venv
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Packaging & build artifacts
+build/
+dist/
+*.egg-info/
+
+# Downloaded audio data & generated manifests (keep repo lightweight)
+data/
+downloads/
+*.mp3
+*.wav
+*.flac
+*.ogg
+*.part
+
+# IDE & OS metadata
+.idea/
+.vscode/
+.DS_Store
