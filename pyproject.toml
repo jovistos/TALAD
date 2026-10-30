@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "talad"
+version = "2.0.0"
+description = "This American Life Audio Dataset (TALAD) Downloader, Transcoder & Manifest Toolkit"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Jovan Drenovčanin"}
+]
+keywords = [
+    "speech-recognition",
+    "speaker-diarization",
+    "audio-dataset",
+    "podcast",
+    "this-american-life",
+    "asr",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Sound/Audio :: Conversion",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "tqdm>=4.60.0",
+    "pydub>=0.25.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/jovistos/TALAD"
+Repository = "https://github.com/jovistos/TALAD"
+Issues = "https://github.com/jovistos/TALAD/issues"
+
+[project.scripts]
+talad = "talad.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["talad*"]
